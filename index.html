@@ -54,8 +54,8 @@
     <header>
         <h1>Ristorante Fantastico in Italia</h1>
         <div>
-            <input type="search" placeholder="Search...">
-            <button type="submit">Search</button>
+            <input type="search" placeholder="Search..." id="searchInput">
+            <button type="submit" onclick="search()">Search</button>
         </div>
     </header>
 
@@ -81,7 +81,6 @@
             <p id="totalPrice">Total Price: $0.00</p>
             <button onclick="checkout()">Checkout</button>
         </section>
-    </main>
     </main>
 
     <script>
@@ -109,6 +108,25 @@
             var totalPrice = parseFloat(totalPriceElement.textContent.replace("Total Price: $", ""));
             alert("Thank you for your order! Your total is $" + totalPrice.toFixed(2));
         }
+
+        function search() {
+            // Get the search input value
+            var searchInput = document.getElementById("searchInput").value;
+
+            // Perform search logic here
+            var menuItems = document.querySelectorAll("#menu li");
+            for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+            var itemName = menuItem.textContent.split(" - ")[0];
+            if (itemName.toLowerCase().includes(searchInput.toLowerCase())) {
+                menuItem.style.display = "block";
+            } else {
+                menuItem.style.display = "none";
+            }
+            }
+        }
     </script>
 </body>
+</body>
 </html>
+
