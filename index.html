@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ristorante Bella Vita</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Italian Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#checkout">Checkout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <input type="text" id="search" placeholder="Search...">
+        <ul id="menu-items">
+            <li>
+            <h3>Pizza Margherita</h3>
+            <p class="price">$10.99</p>
+            <button class="add-to-cart" onclick="addToCart('Pizza Margherita', 10.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Spaghetti Bolognese</h3>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart" onclick="addToCart('Spaghetti Bolognese', 12.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Lasagna</h3>
+            <p class="price">$14.99</p>
+            <button class="add-to-cart" onclick="addToCart('Lasagna', 14.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Ravioli</h3>
+            <p class="price">$11.99</p>
+            <button class="add-to-cart" onclick="addToCart('Ravioli', 11.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Caprese Salad</h3>
+            <p class="price">$8.99</p>
+            <button class="add-to-cart" onclick="addToCart('Caprese Salad', 8.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Tiramisu</h3>
+            <p class="price">$6.99</p>
+            <button class="add-to-cart" onclick="addToCart('Tiramisu', 6.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Bruschetta</h3>
+            <p class="price">$5.99</p>
+            <button class="add-to-cart" onclick="addToCart('Bruschetta', 5.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Minestrone Soup</h3>
+            <p class="price">$7.99</p>
+            <button class="add-to-cart" onclick="addToCart('Minestrone Soup', 7.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Chicken Parmesan</h3>
+            <p class="price">$13.99</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Parmesan', 13.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Gnocchi</h3>
+            <p class="price">$10.99</p>
+            <button class="add-to-cart" onclick="addToCart('Gnocchi', 10.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Calzone</h3>
+            <p class="price">$11.99</p>
+            <button class="add-to-cart" onclick="addToCart('Calzone', 11.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Cannoli</h3>
+            <p class="price">$7.99</p>
+            <button class="add-to-cart" onclick="addToCart('Cannoli', 7.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Carbonara</h3>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart" onclick="addToCart('Carbonara', 12.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Antipasto Platter</h3>
+            <p class="price">$15.99</p>
+            <button class="add-to-cart" onclick="addToCart('Antipasto Platter', 15.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Panna Cotta</h3>
+            <p class="price">$6.99</p>
+            <button class="add-to-cart" onclick="addToCart('Panna Cotta', 6.99)">Add to Cart</button>
+            </li>
+            <!-- Add 15 more menu items of your choice here -->
+            <li>
+            <h3>Margherita Pizza</h3>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart" onclick="addToCart('Margherita Pizza', 9.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Chicken Alfredo</h3>
+            <p class="price">$13.99</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Alfredo', 13.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Vegetable Risotto</h3>
+            <p class="price">$11.99</p>
+            <button class="add-to-cart" onclick="addToCart('Vegetable Risotto', 11.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Seafood Linguine</h3>
+            <p class="price">$16.99</p>
+            <button class="add-to-cart" onclick="addToCart('Seafood Linguine', 16.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Chicken Marsala</h3>
+            <p class="price">$14.99</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Marsala', 14.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Veal Parmesan</h3>
+            <p class="price">$17.99</p>
+            <button class="add-to-cart" onclick="addToCart('Veal Parmesan', 17.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Shrimp Scampi</h3>
+            <p class="price">$15.99</p>
+            <button class="add-to-cart" onclick="addToCart('Shrimp Scampi', 15.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Caprese Pizza</h3>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart" onclick="addToCart('Caprese Pizza', 12.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Eggplant Parmesan</h3>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart" onclick="addToCart('Eggplant Parmesan', 12.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Chicken Piccata</h3>
+            <p class="price">$13.99</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Piccata', 13.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Meatball Sub</h3>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart" onclick="addToCart('Meatball Sub', 9.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Vegetable Lasagna</h3>
+            <p class="price">$12.99</p>
+            <button class="add-to-cart" onclick="addToCart('Vegetable Lasagna', 12.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Chicken Caesar Salad</h3>
+            <p class="price">$9.99</p>
+            <button class="add-to-cart" onclick="addToCart('Chicken Caesar Salad', 9.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Seafood Risotto</h3>
+            <p class="price">$17.99</p>
+            <button class="add-to-cart" onclick="addToCart('Seafood Risotto', 17.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Veal Marsala</h3>
+            <p class="price">$16.99</p>
+            <button class="add-to-cart" onclick="addToCart('Veal Marsala', 16.99)">Add to Cart</button>
+            </li>
+            <li>
+            <h3>Shrimp Alfredo</h3>
+            <p class="price">$15.99</p>
+            <button class="add-to-cart" onclick="addToCart('Shrimp Alfredo', 15.99)">Add to Cart</button>
+            </li>
+        </ul>
+        </ul>
+    </section>
+
+    <script>
+    function addToCart(itemName, price) {
+
+        // Add the item to the cart
+        // You can implement the logic to add the item to the cart here
+    }
+        // Add your JavaScript code here
+    </script>
+        </ul>
+    </section>
+
+    <section id="checkout">
+        <h2>Checkout</h2>
+        <form id="checkout-form">
+            <!-- Checkout form fields will be added here -->
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+</body>
+</html>
